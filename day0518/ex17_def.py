@@ -1,4 +1,6 @@
-import userdef #외부 파이썬 파일 가져오기
+from day0518 import userdef
+
+
 #사용자 정의 함수 만들기
 def plus(x,y):
     #print(x,"+",y,"=",x+y)
@@ -17,9 +19,10 @@ plus(100,200)
 info("강호동","홍익대","작곡과")
 info("유미리","서울대","미술과")
 
+
 print("총 세번의 점수를 입력하세요")
 for sc in range(3):
     sc=input("당신의 점수를 입력하세요")
     sc=int(sc)
-    g=userdef.score(sc)
+    g= userdef.score(sc)
     print(sc,"점수는 ",g,"학점입니다.")
